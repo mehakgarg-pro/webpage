@@ -1,0 +1,95 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #7d4caf;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff0080;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.features article {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 30%; /* Responsive flex item */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .features article {
+        flex: 1 1 100%; /* Stacks articles on small screens */
+    }
+}
